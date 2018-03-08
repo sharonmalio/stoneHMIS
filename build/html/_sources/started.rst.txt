@@ -1,0 +1,32 @@
+
+
+Clinical functionality
+----------------------
+community functionality
+-----------------------
+DHIS functionality
+------------------
+Finad functionality
+-------------------
+Laboratory functionality
+------------------------
+Medicine functionality
+-----------------------
+Obsgyn functionality
+--------------------
+Outpatient functionality
+------------------------
+Paediatrics functionality
+-------------------------
+Patient functionality
+---------------------
+Pharmacy functionality
+----------------------
+Registry functionality
+----------------------
+specials functionality
+----------------------
+System functionality
+--------------------
+
+

@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Specials functionality &mdash; stone 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="stone 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="System functionality" href="system.html"/>
+        <link rel="prev" title="Registry functionality" href="registry.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> stone
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="theguide.html">About this Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#about-stonehmis">1.1 About StoneHMIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#overview-of-stonehmis">1.2 Overview of StoneHMIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="application.html">Application functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="application.html#getting-started-with-application-functionality">Getting started with application functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clinical.html">Clinical functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clinical.html#getting-started-with-clinical-functionality">Getting started with clinical functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Community functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="community.html#getting-started-with-community-functionality">5.1 Getting started with community functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household">5.2 Household</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-registering-a-household">5.2.1 Adding/Registering a Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#searching-for-a-household">5.2.2 Searching for a Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-household">5.2.3 Changing details of an existing Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-existing-households">5.2.4 Viewing existing households</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-head">5.3 Household head</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-registering-a-household-head">5.3.1 Adding/Registering a Household head</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-household-head">5.3.2 Changing details of an existing Household head</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-existing-household-heads">5.3.3 Viewing existing household heads</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-relationship">5.4 Household Relationship</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-a-new-relationship">5.4.1 Adding a new Relationship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-relationships">5.4.2 Changing details of an existing relationships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-the-list-of-all-existing-relationships">5.4.3.Viewing the list of all existing relationships</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-visit">5.5 Household Visit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#add-visits-by-person">5.5.1 Add visits by person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#add-visits-by-household">5.5.2 Add visits by household</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#reports">5.6 Reports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-details-of-households">5.6.1 Viewing details of households</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-details-of-household-visit">5.6.2 viewing details of household visit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-the-indicators-available-per-house">5.6.3 Viewing the indicators available per house</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dhis.html">Dhis functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dhis.html#getting-started-with-dhis-functionality">Getting started with Dhis functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="finad.html">Finad functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="finad.html#getting-started-with-finad-functionality">Getting started with finad functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="laboratory.html">Laboratory functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="laboratory.html#getting-started-with-laboratory-functionality">Getting started with laboratory functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="medicine.html">Medicine functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="medicine.html#getting-started-with-medicine-functionality">Getting started with medicine functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="obsgyn.html">Obsgyn functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="obsgyn.html#getting-started-with-obsgyn-functionality">Getting started with obsgyn functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outpatient.html">Outpatient functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outpatient.html#getting-started-with-outpatient-functionality">Getting started with outpatient functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="paediatrics.html">Paediatrics functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paediatrics.html#getting-started-with-paediatrics-functionality">Getting started with paediatrics functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="patient.html">Patient functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="patient.html#getting-started-with-patient-functionality">Getting started with patient functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacy.html">Pharmacy functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacy.html#getting-started-with-pharmacy-functionality">14.1 Getting started with pharmacy functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacy.html#product-management">14.2 Product management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#adding-a-new-product-into-the-system">14.2.1 Adding a new product into the system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#viewing-the-available-products">14.2.2 Viewing the available products</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#changing-modifying-details-of-a-given-product">14.2.3 Changing/modifying details of a given product</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#finding-a-given-product-within-the-system">14.2.4 Finding a given product within the system</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacy.html#stock-management">14.3 Stock management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#adding-a-new-stock">14.3.1 Adding  a new stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#viewing-the-available-stock">14.3.2 Viewing the available stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#price-stock">14.3.3 Price stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#viewing-the-stocks-against-their-prices">14.3.4 Viewing the stocks against their prices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#expired-stock">14.3.5 Expired stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#recording-stock-indifference">14.3.6 Recording stock indifference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#transfer-stock">14.3.7 Transfer stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#return-stock">14.3.8 Return stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#preventing-a-stock-from-being-edited">14.3.9 Preventing a stock from being edited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#stats">14.3.10 Stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacy.html#retail-pharmacy">14.4 Retail pharmacy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#regular-sales">14.4.1 Regular sales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#receivable-sales">14.4.2 Receivable sales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#sales-report-view-sold-products">14.4.3 Sales report/ View sold products</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacy.html#retail-home">14.4.4 Retail home</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="registry.html">Registry functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#getting-started-with-registry-functionality">15.1 Getting started with Registry Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#persons-registry">15.2 Persons Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-registering-a-unique-new-person">15.2.1  Adding/Registering a unique/new Person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-already-registered-persons">15.2.2 Viewing the already registered Persons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#changing-modifying-details-of-an-already-registered-person">15.2.3 Changing/modifying details of an already registered person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#searching-finding-an-already-registered-person">15.2.4 Searching/finding an already registered person</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#attendance-registry">15.3 Attendance Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#add-attendance">15.3.1 Add attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#view-all-the-available-registered-attendances">15.3.2 View all the available/registered attendances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#appointments-registry">15.4 Appointments Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#schedule-destination">15.4.1 Schedule destination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-scheduled-destinations">15.4.2  Viewing scheduled Destinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#schedule-appointment">15.4.3 Schedule appointment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#list-appointment">15.4.4 List appointment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-registering-a-new-destination">15.4.5 Adding/registering a new destination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-added-legal-clinics">15.4.6 Viewing the added legal clinics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#card-registry">15.5 Card Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-a-new-card">15.5.1 Adding a new Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-all-the-cards">15.5.2 Viewing all the Cards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#changing-modifying-details-of-a-card">15.5.3 Changing/modifying details of a card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#searching-for-a-card">15.5.4 Searching for a Card</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#historical-attendance">15.6 Historical Attendance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-historical-attendance">15.6.1 Adding Historical attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#editing-historical-attendance">15.6.2 Editing Historical attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-all-the-persons-with-attendance-cards">15.6.3 Viewing all the persons with attendance cards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-persons-attendance">15.6.4 Viewing the persons’ attendance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Specials functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-specials-functionality">Getting started with specials functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">System functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="system.html#getting-started-with-system-functionality">Getting started with system functionality</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">stone</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Specials functionality</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/specials.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="specials-functionality">
+<h1>Specials functionality<a class="headerlink" href="#specials-functionality" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started-with-specials-functionality">
+<h2>Getting started with specials functionality<a class="headerlink" href="#getting-started-with-specials-functionality" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="system.html" class="btn btn-neutral float-right" title="System functionality" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="registry.html" class="btn btn-neutral" title="Registry functionality" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, StoneHMIS Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

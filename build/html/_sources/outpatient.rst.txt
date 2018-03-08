@@ -1,0 +1,5 @@
+Outpatient functionality
+========================
+
+Getting started with outpatient functionality
++++++++++++++++++++++++++++++++++++++++++++++

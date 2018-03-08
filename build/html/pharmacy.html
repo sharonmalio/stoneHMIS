@@ -1,0 +1,725 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pharmacy functionality &mdash; stone 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="stone 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Registry functionality" href="registry.html"/>
+        <link rel="prev" title="Patient functionality" href="patient.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> stone
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="theguide.html">About this Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#about-stonehmis">1.1 About StoneHMIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#overview-of-stonehmis">1.2 Overview of StoneHMIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="application.html">Application functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="application.html#getting-started-with-application-functionality">Getting started with application functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clinical.html">Clinical functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clinical.html#getting-started-with-clinical-functionality">Getting started with clinical functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Community functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="community.html#getting-started-with-community-functionality">5.1 Getting started with community functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household">5.2 Household</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-registering-a-household">5.2.1 Adding/Registering a Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#searching-for-a-household">5.2.2 Searching for a Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-household">5.2.3 Changing details of an existing Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-existing-households">5.2.4 Viewing existing households</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-head">5.3 Household head</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-registering-a-household-head">5.3.1 Adding/Registering a Household head</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-household-head">5.3.2 Changing details of an existing Household head</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-existing-household-heads">5.3.3 Viewing existing household heads</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-relationship">5.4 Household Relationship</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#adding-a-new-relationship">5.4.1 Adding a new Relationship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#changing-details-of-an-existing-relationships">5.4.2 Changing details of an existing relationships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-the-list-of-all-existing-relationships">5.4.3.Viewing the list of all existing relationships</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#household-visit">5.5 Household Visit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#add-visits-by-person">5.5.1 Add visits by person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#add-visits-by-household">5.5.2 Add visits by household</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="community.html#reports">5.6 Reports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-details-of-households">5.6.1 Viewing details of households</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-details-of-household-visit">5.6.2 viewing details of household visit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="community.html#viewing-the-indicators-available-per-house">5.6.3 Viewing the indicators available per house</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dhis.html">Dhis functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dhis.html#getting-started-with-dhis-functionality">Getting started with Dhis functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="finad.html">Finad functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="finad.html#getting-started-with-finad-functionality">Getting started with finad functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="laboratory.html">Laboratory functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="laboratory.html#getting-started-with-laboratory-functionality">Getting started with laboratory functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="medicine.html">Medicine functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="medicine.html#getting-started-with-medicine-functionality">Getting started with medicine functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="obsgyn.html">Obsgyn functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="obsgyn.html#getting-started-with-obsgyn-functionality">Getting started with obsgyn functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outpatient.html">Outpatient functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outpatient.html#getting-started-with-outpatient-functionality">Getting started with outpatient functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="paediatrics.html">Paediatrics functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paediatrics.html#getting-started-with-paediatrics-functionality">Getting started with paediatrics functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="patient.html">Patient functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="patient.html#getting-started-with-patient-functionality">Getting started with patient functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pharmacy functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-pharmacy-functionality">14.1 Getting started with pharmacy functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#product-management">14.2 Product management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-new-product-into-the-system">14.2.1 Adding a new product into the system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-the-available-products">14.2.2 Viewing the available products</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changing-modifying-details-of-a-given-product">14.2.3 Changing/modifying details of a given product</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-a-given-product-within-the-system">14.2.4 Finding a given product within the system</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stock-management">14.3 Stock management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-new-stock">14.3.1 Adding  a new stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-the-available-stock">14.3.2 Viewing the available stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#price-stock">14.3.3 Price stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-the-stocks-against-their-prices">14.3.4 Viewing the stocks against their prices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expired-stock">14.3.5 Expired stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recording-stock-indifference">14.3.6 Recording stock indifference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transfer-stock">14.3.7 Transfer stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#return-stock">14.3.8 Return stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preventing-a-stock-from-being-edited">14.3.9 Preventing a stock from being edited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stats">14.3.10 Stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#retail-pharmacy">14.4 Retail pharmacy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#regular-sales">14.4.1 Regular sales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#receivable-sales-dispensing-the-products-on-credit">14.4.2 Receivable sales/ dispensing the products on credit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">14.4.1 Regular sales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#receivable-sales-dispesing-the-products-on-credit">14.4.2 Receivable sales/ dispesing the products on credit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sales-report-view-sold-products">14.4.3 Sales report/ View sold products</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dispensing-pharmacy">14.5 Dispensing pharmacy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pack-and-invoice">14.5.1 Pack and invoice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prescription-collection">14.5.2 prescription collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sales-report">14.5.3 Sales report</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#supply-management">14.6 Supply management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#restock-inventory">14.6.1 Restock inventory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-inventory">14.6.2 New Inventory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-re-order-level">14.6.3 Add Re-order level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-re-order-level">14.6.4 Edit Re-order Level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#receive-a-delivery">14.6.5 Receive a Delivery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-deliveries">14.6.6 List Deliveries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pharmacy-system">14.7 Pharmacy system</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#route-of-administration">14.7.1 Route of administration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unit-of-measurements">14.7.2 Unit of measurements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dosage-form">14.7.3 Dosage form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency-of-administration">14.7.4 Frequency of administration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixed-dose-combinations">14.7.5 Fixed dose combinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#treatment-regimes">14.7.6 Treatment Regimes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#drug-index">14.8 Drug index</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#drug-indication">14.8.1 Drug indication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drug-interaction">14.8.2 Drug interaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drug-contraindication">14.8.3 Drug Contraindication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drug-adverse-effect">14.8.4 Drug Adverse Effect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pharmacy-reports">14.9 Pharmacy Reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="registry.html">Registry functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#getting-started-with-registry-functionality">15.1 Getting started with Registry Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#persons-registry">15.2 Persons Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-registering-a-unique-new-person">15.2.1  Adding/Registering a unique/new Person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-already-registered-persons">15.2.2 Viewing the already registered Persons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#changing-modifying-details-of-an-already-registered-person">15.2.3 Changing/modifying details of an already registered person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#searching-finding-an-already-registered-person">15.2.4 Searching/finding an already registered person</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#attendance-registry">15.3 Attendance Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#add-attendance">15.3.1 Add attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#view-all-the-available-registered-attendances">15.3.2 View all the available/registered attendances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#appointments-registry">15.4 Appointments Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#schedule-destination">15.4.1 Schedule destination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-scheduled-destinations">15.4.2  Viewing scheduled Destinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#schedule-appointment">15.4.3 Schedule appointment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#list-appointment">15.4.4 List appointment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-registering-a-new-destination">15.4.5 Adding/registering a new destination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-added-legal-clinics">15.4.6 Viewing the added legal clinics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#card-registry">15.5 Card Registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-a-new-card">15.5.1 Adding a new Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-all-the-cards">15.5.2 Viewing all the Cards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#changing-modifying-details-of-a-card">15.5.3 Changing/modifying details of a card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#searching-for-a-card">15.5.4 Searching for a Card</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="registry.html#historical-attendance">15.6 Historical Attendance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#adding-historical-attendance">15.6.1 Adding Historical attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#editing-historical-attendance">15.6.2 Editing Historical attendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-all-the-persons-with-attendance-cards">15.6.3 Viewing all the persons with attendance cards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registry.html#viewing-the-persons-attendance">15.6.4 Viewing the persons’ attendance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="specials.html">Specials functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="specials.html#getting-started-with-specials-functionality">Getting started with specials functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">System functionality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="system.html#getting-started-with-system-functionality">Getting started with system functionality</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">stone</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Pharmacy functionality</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pharmacy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pharmacy-functionality">
+<h1>Pharmacy functionality<a class="headerlink" href="#pharmacy-functionality" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started-with-pharmacy-functionality">
+<h2>14.1 Getting started with pharmacy functionality<a class="headerlink" href="#getting-started-with-pharmacy-functionality" title="Permalink to this headline">¶</a></h2>
+<p>The pharmaceutical stock management system is a tool designed for use by pharmaceutical
+personnel or stores personnel who are involved in managing stocks of pharmaceutical commodities.
+This particular module assists the personnel to be able to interact with the pharmaceutical accordingly</p>
+</div>
+<div class="section" id="product-management">
+<h2>14.2 Product management<a class="headerlink" href="#product-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-a-new-product-into-the-system">
+<h3>14.2.1 Adding a new product into the system<a class="headerlink" href="#adding-a-new-product-into-the-system" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Registry module from the side bar</li>
+<li>Locate the Product management sub-module and click on it</li>
+<li>Click on the <strong>New Product</strong> button</li>
+<li>Click on the <strong>Add new product…</strong> link andopen the form</li>
+<li>Fill in the form as required.</li>
+<li>Click on the <strong>add product</strong> button.</li>
+</ol>
+</div>
+<div class="section" id="viewing-the-available-products">
+<h3>14.2.2 Viewing the available products<a class="headerlink" href="#viewing-the-available-products" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Registry module from the side bar</li>
+<li>Locate the Product management sub-module and click on it</li>
+<li>Click on the <strong>List Product</strong> button</li>
+<li>All the available/added products should now be displayed</li>
+</ol>
+</div>
+<div class="section" id="changing-modifying-details-of-a-given-product">
+<h3>14.2.3 Changing/modifying details of a given product<a class="headerlink" href="#changing-modifying-details-of-a-given-product" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Registry module from the side bar</li>
+<li>Locate the Product management sub-module and click on it</li>
+<li>Click on the <strong>Edit Product</strong> button</li>
+<li>Search for the product whose details you would like to modify</li>
+<li>Double click on it once it appears</li>
+<li>Change the details as required</li>
+<li>Click on the <strong>edit product</strong> button</li>
+</ol>
+</div>
+<div class="section" id="finding-a-given-product-within-the-system">
+<h3>14.2.4 Finding a given product within the system<a class="headerlink" href="#finding-a-given-product-within-the-system" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Registry module from the side bar</li>
+<li>Locate the Product management sub-module and click on it</li>
+<li>Click on the <strong>Search Product</strong> button</li>
+<li>Fill in either the product id, its name, its manufacturer, description or its ingredient</li>
+<li>The product being searched for appears at the botton.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="stock-management">
+<h2>14.3 Stock management<a class="headerlink" href="#stock-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-a-new-stock">
+<h3>14.3.1 Adding  a new stock<a class="headerlink" href="#adding-a-new-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>New Stock</strong> button</li>
+<li>Search for the product whose stock you would want to add</li>
+<li>Double click on the product</li>
+<li>Fill in the required details</li>
+<li>Click on the <strong>save stock</strong> button</li>
+</ol>
+</div>
+<div class="section" id="viewing-the-available-stock">
+<h3>14.3.2 Viewing the available stock<a class="headerlink" href="#viewing-the-available-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>List Stock</strong> button</li>
+<li>All the added/available stock should display here</li>
+</ol>
+</div>
+<div class="section" id="price-stock">
+<h3>14.3.3 Price stock<a class="headerlink" href="#price-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Price Stock</strong> button</li>
+</ol>
+</div>
+<div class="section" id="viewing-the-stocks-against-their-prices">
+<h3>14.3.4 Viewing the stocks against their prices<a class="headerlink" href="#viewing-the-stocks-against-their-prices" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Price List</strong> button</li>
+<li>All the available stocks should display here with their prices.</li>
+</ol>
+</div>
+<div class="section" id="expired-stock">
+<h3>14.3.5 Expired stock<a class="headerlink" href="#expired-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Expired Stock</strong> button</li>
+<li>All the expired stock should display here with a <strong>remove</strong> link</li>
+<li>Remove them if need be by clicking on the <strong>remove</strong> link</li>
+</ol>
+</div>
+<div class="section" id="recording-stock-indifference">
+<h3>14.3.6 Recording stock indifference<a class="headerlink" href="#recording-stock-indifference" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Reconcile Stock</strong> button</li>
+<li>Click on the stock whose number discrepancies you would like to record from the list displayed</li>
+<li>Add the numbers as required in the form provided</li>
+<li>Click on the <strong>reconcile stock</strong> button</li>
+<li>A list of all stocks should appear with a <strong>reconciled</strong> tab showing the dates of reconciliation.</li>
+</ol>
+</div>
+<div class="section" id="transfer-stock">
+<h3>14.3.7 Transfer stock<a class="headerlink" href="#transfer-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the Pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Transfer Stock</strong> button</li>
+</ol>
+</div>
+<div class="section" id="return-stock">
+<h3>14.3.8 Return stock<a class="headerlink" href="#return-stock" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Return Stock</strong> button</li>
+</ol>
+</div>
+<div class="section" id="preventing-a-stock-from-being-edited">
+<h3>14.3.9 Preventing a stock from being edited<a class="headerlink" href="#preventing-a-stock-from-being-edited" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Control Edits</strong> button</li>
+<li>Choose the stock whose edit you would want to control</li>
+<li>Click on the <strong>lock</strong> link at the <strong>status</strong> tab</li>
+<li>The status should change to <strong>unlock</strong></li>
+</ol>
+</div>
+<div class="section" id="stats">
+<h3>14.3.10 Stats<a class="headerlink" href="#stats" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Stock management</strong> sub-module and click on it</li>
+<li>Click on the <strong>Stats</strong> button</li>
+</ol>
+</div>
+</div>
+<div class="section" id="retail-pharmacy">
+<h2>14.4 Retail pharmacy<a class="headerlink" href="#retail-pharmacy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="regular-sales">
+<h3>14.4.1 Regular sales<a class="headerlink" href="#regular-sales" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Retail pharmacy</strong> sub-module and click on it</li>
+<li>Click on the <strong>Regular sales</strong> button</li>
+<li>Double click on the product that you want to sell</li>
+<li>Fill in the quantity as required in the form presented</li>
+<li>Click on the <strong>add to cart</strong> button</li>
+<li>Click on the <strong>dispense sale</strong> button</li>
+<li>Hit on the <strong>Collect payment</strong> button</li>
+<li>Click on the <strong>make payment</strong> depending on the type of payment the person is using. <em>mpesa</em>, <em>Cash</em>, or <em>Card</em></li>
+<li>Fill in the details within the presented form as required.</li>
+<li>Hit on the <strong>receive payment</strong> button</li>
+<li>click on the print receipt button if all the payment is made</li>
+<li>Click on <strong>collect payment</strong> if the persons are still paying</li>
+</ol>
+</div>
+<div class="section" id="receivable-sales-dispensing-the-products-on-credit">
+<h3>14.4.2 Receivable sales/ dispensing the products on credit<a class="headerlink" href="#receivable-sales-dispensing-the-products-on-credit" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Retail pharmacy</strong> sub-module and click on it</li>
+<li>Click on the <strong>Regular sales</strong> button</li>
+<li>Double click on the product that you want to sell</li>
+<li>Fill in the quantity as required in the form presented</li>
+<li>Click on the <strong>add to cart</strong> button</li>
+<li>Click on the <strong>dispense sale</strong> button</li>
+<li>Hit on the <strong>Collect payment</strong> button</li>
+<li>Click on the <strong>make payment</strong> depending on the type of payment the person is using. <em>mpesa</em>, <em>Cash</em>, or <em>Card</em></li>
+<li>Fill in the details within the presented form as required.</li>
+<li>Hit on the <strong>receive payment</strong> button</li>
+<li>click on the print receipt button if all the payment is made</li>
+<li>Click on <strong>collect payment</strong> if the persons are still paying</li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h3>14.4.1 Regular sales<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Retail pharmacy</strong> sub-module and click on it</li>
+<li>Click on the <strong>Regular sales</strong> button</li>
+<li>Double click on the product that you want to sell</li>
+<li>Fill in the quantity as required in the form presented</li>
+<li>Click on the <strong>add to cart</strong> button</li>
+<li>Click on the <strong>dispense sale</strong> button</li>
+<li>Hit on the <strong>Collect payment</strong> button</li>
+<li>Click on the <strong>make payment</strong> depending on the type of payment the person is using. <em>mpesa</em>, <em>Cash</em>, or <em>Card</em></li>
+<li>Fill in the details within the presented form as required.</li>
+<li>Hit on the <strong>receive payment</strong> button</li>
+<li>click on the print receipt button if all the payment is made</li>
+<li>Click on <strong>collect payment</strong> if the persons are still paying</li>
+</ol>
+</div>
+<div class="section" id="receivable-sales-dispesing-the-products-on-credit">
+<h3>14.4.2 Receivable sales/ dispesing the products on credit<a class="headerlink" href="#receivable-sales-dispesing-the-products-on-credit" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Retail pharmacy</strong> sub-module and click on it</li>
+<li>Click on the <strong>Regular sales</strong> button</li>
+<li>Double click on the product that you want to sell</li>
+<li>Fill in the quantity as required in the form presented</li>
+<li>Click on the <strong>add to cart</strong> button</li>
+<li>Click on the <strong>dispense sale</strong> button</li>
+<li>Hit on the <strong>Collect payment</strong> button</li>
+<li>Click on the <strong>make payment</strong> depending on the type of payment the person is using. <em>mpesa</em>, <em>Cash</em>, or <em>Card</em></li>
+<li>Fill in the details within the presented form as required.</li>
+<li>Hit on the <strong>receive payment</strong> button</li>
+<li>click on the print receipt button if all the payment is made</li>
+<li>Click on <strong>collect payment</strong> if the persons are still paying</li>
+</ol>
+</div>
+<div class="section" id="sales-report-view-sold-products">
+<h3>14.4.3 Sales report/ View sold products<a class="headerlink" href="#sales-report-view-sold-products" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the pharmacy module from the side bar</li>
+<li>Locate the <strong>Retail pharmacy</strong> sub-module and click on it</li>
+<li>Click on the <strong>Sales Report</strong> button</li>
+<li>Fill in the start date and the end date of the reports you would like to view</li>
+<li>Click on get report buton</li>
+<li>The products and their details should be displayed at the bottom of the search button</li>
+</ol>
+</div>
+</div>
+<div class="section" id="dispensing-pharmacy">
+<h2>14.5 Dispensing pharmacy<a class="headerlink" href="#dispensing-pharmacy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pack-and-invoice">
+<h3>14.5.1 Pack and invoice<a class="headerlink" href="#pack-and-invoice" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="prescription-collection">
+<h3>14.5.2 prescription collection<a class="headerlink" href="#prescription-collection" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="sales-report">
+<h3>14.5.3 Sales report<a class="headerlink" href="#sales-report" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="supply-management">
+<h2>14.6 Supply management<a class="headerlink" href="#supply-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="restock-inventory">
+<h3>14.6.1 Restock inventory<a class="headerlink" href="#restock-inventory" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="new-inventory">
+<h3>14.6.2 New Inventory<a class="headerlink" href="#new-inventory" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="add-re-order-level">
+<h3>14.6.3 Add Re-order level<a class="headerlink" href="#add-re-order-level" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="edit-re-order-level">
+<h3>14.6.4 Edit Re-order Level<a class="headerlink" href="#edit-re-order-level" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="receive-a-delivery">
+<h3>14.6.5 Receive a Delivery<a class="headerlink" href="#receive-a-delivery" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="list-deliveries">
+<h3>14.6.6 List Deliveries<a class="headerlink" href="#list-deliveries" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="pharmacy-system">
+<h2>14.7 Pharmacy system<a class="headerlink" href="#pharmacy-system" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="route-of-administration">
+<h3>14.7.1 Route of administration<a class="headerlink" href="#route-of-administration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="unit-of-measurements">
+<h3>14.7.2 Unit of measurements<a class="headerlink" href="#unit-of-measurements" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="dosage-form">
+<h3>14.7.3 Dosage form<a class="headerlink" href="#dosage-form" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="frequency-of-administration">
+<h3>14.7.4 Frequency of administration<a class="headerlink" href="#frequency-of-administration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fixed-dose-combinations">
+<h3>14.7.5 Fixed dose combinations<a class="headerlink" href="#fixed-dose-combinations" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="treatment-regimes">
+<h3>14.7.6 Treatment Regimes<a class="headerlink" href="#treatment-regimes" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="drug-index">
+<h2>14.8 Drug index<a class="headerlink" href="#drug-index" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="drug-indication">
+<h3>14.8.1 Drug indication<a class="headerlink" href="#drug-indication" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="drug-interaction">
+<h3>14.8.2 Drug interaction<a class="headerlink" href="#drug-interaction" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="drug-contraindication">
+<h3>14.8.3 Drug Contraindication<a class="headerlink" href="#drug-contraindication" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="drug-adverse-effect">
+<h3>14.8.4 Drug Adverse Effect<a class="headerlink" href="#drug-adverse-effect" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="pharmacy-reports">
+<h2>14.9 Pharmacy Reports<a class="headerlink" href="#pharmacy-reports" title="Permalink to this headline">¶</a></h2>
+<p>Coming soon</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="registry.html" class="btn btn-neutral float-right" title="Registry functionality" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="patient.html" class="btn btn-neutral" title="Patient functionality" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, StoneHMIS Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Laboratory functionality
+========================
+
+Getting started with laboratory functionality
++++++++++++++++++++++++++++++++++++++++++++++
